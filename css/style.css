@@ -1,0 +1,85 @@
+body{
+    background: url(../img/bg.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Style font*/
+@font-face{
+    font-family: "font-all";
+    src: url(../font/Gilroy-Bold.ttf);
+
+}
+.font-all{
+    font-family: "font-all";
+}
+
+/*Navegação Style*/
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75); }
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 27, 65, 1); }
+.navbar-dark .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.75); }
+
+.nav-link{
+    color:rgba(255, 27, 65, 1);
+}
+.nav-link:hover{
+        color: white; 
+}
+
+/*Audio player style*/
+.margin-player{
+    margin-top: 30%;
+}
+
+.titleText{
+    color: white;
+}
+.colorTextRosa{
+    color:#FF1B41;
+}
+.title-album{
+    color: white;
+}
+.custom-range::-webkit-slider-thumb{
+    background: #FF1B41 linear-gradient(180deg, #FF1B41, #FF1B41) repeat-x;
+
+}
+#soundOnOff{
+    transform: translateY(3px) translateX(-20px);
+}
+#sliderVol{
+    width: 50px;
+    transform: translateX(-65px)
+}
+#titleMusic{
+    margin-left: 5%;
+    opacity: 0;
+}
+#track{
+    opacity: 0;
+}
+
+/*SM*/
+.footer-social{
+    margin-top: 35%;
+}
+
+@media (max-width: 575.98px) { 
+    .margin-player{
+        margin-top: 60%;
+    }
+    .title-album{
+        font-size: 30px;
+    }
+    #titleMusic{
+        font-size: 55px;
+    }
+}
+    
+  

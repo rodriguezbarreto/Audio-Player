@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gil Daltro</title>
+
+    <!-- Fonte do projeto-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Animações-->
+    <link rel="stylesheet" href=" https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+    
+    <!--Navegação-->
+    <section id="sec-1">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-padding ">
+            <div class="container">
+                <a class="navbar-brand ml-5 font-all" href="index.html"><h4><strong>Gil Daltro</strong></h4></a>
+            </div>
+        </nav>
+    </section>
+    <!--/Navegação-->
+
+   <!--Audio player-->
+ 
+    <section>
+        <div class="container margin-player font-all">
+            <div class="my-5">
+                <h5 id="track" class="colorTextRosa">Track</h5>
+                <h1 id="titleMusic" class="display-3 titleText"></h1>
+            </div>
+            <div class="row">
+                <audio id="audioTag"></audio>
+                <div class="col-3 col-lg-1 align-self-center"><a id="btnPlayer" class="nav-link" href=""><i id="btnIcon" class="fas fa-play fa-3x"></i></a></div>
+                <div class="col-5 col-lg-3 align-self-center"><input type="range" class="custom-range" value="0"id="timeSlider"></div>
+                <div class="col-3 col-lg-1 align-self-center"><a id="soundOnOff" class="nav-link" href=""><i id="mutedIcon" class="fas fa-volume-up fa-lg"></i></a></div>
+                <div class="col-1 col-lg-1 align-self-center"><input id="sliderVol" type="range" min="0" max="100" value="100" class="custom-range"></div>
+            </div>
+            <div class="animated fadeInUp"><h5 class="colorTextRosa mt-5">Album</h5><h3 class="title-album"> Narrando a Era da psicose</h3></div>
+        </div>
+    </section>
+
+    <!--/Audio player-->
+    
+    <footer class="container-fluid">
+        
+        <ul class="nav justify-content-center d-md-none footer-social">
+            <li class="nav-item"><a class="nav-link" href="#sec-2"><i class="fab fa-spotify fa-lg"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#sec-2"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#sec-2"><i class="fab fa-youtube fa-lg"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#sec-2"><i class="fab fa-facebook fa-lg"></i></a></li>
+        </ul>
+            
+    </footer>
+
+    <!-- Fim do HTML-->
+    <!-- JavaScript (Opcional) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        }); 
+    </script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
