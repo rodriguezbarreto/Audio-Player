@@ -1,4 +1,5 @@
 
+
 //GetElements
 const btnPlayer = document.querySelector("#btnPlayer")
 const audioTag = document.querySelector("#audioTag")
@@ -9,9 +10,14 @@ const mutedIcon = document.querySelector("#mutedIcon")
 const sliderVol = document.querySelector("#sliderVol")
 const track = document.querySelector("#track")
 
+// Animação
+AOS.init({
+    duration: 1200
+}); 
+
 // Array e estado de current
 const listMusic = ["audios/audio1.mp3","audios/audio2.mp3","audios/audio3.mp3"]
-const listTitle = ["Resolução", "teste2", "teste3"]
+const listTitle = ["Track 1", "Track 2", "Track 3"]
 let curretMusic = 0
 audioTag.src = listMusic[curretMusic]
 titleMusic.innerText = listTitle[curretMusic]
@@ -33,6 +39,7 @@ btnPlayer.onclick = function (e) {
         btnIcon.classList.add("fa-play")
     }   
 }
+
 //Volume
 soundOnOff.onclick = function(e){
     e.preventDefault()

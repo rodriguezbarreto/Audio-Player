@@ -1,20 +1,12 @@
 body{
-    background: url(../img/bg.jpg) center center no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: rgb(22, 22, 22);
 }
 
 /*Style font*/
-@font-face{
-    font-family: "font-all";
-    src: url(../font/Gilroy-Bold.ttf);
 
-}
 .font-all{
-    font-family: "font-all";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 /*Navegação Style*/
@@ -33,9 +25,6 @@ body{
 }
 
 /*Audio player style*/
-.margin-player{
-    margin-top: 30%;
-}
 
 .titleText{
     color: white;
@@ -64,22 +53,3 @@ body{
 #track{
     opacity: 0;
 }
-
-/*SM*/
-.footer-social{
-    margin-top: 35%;
-}
-
-@media (max-width: 575.98px) { 
-    .margin-player{
-        margin-top: 60%;
-    }
-    .title-album{
-        font-size: 30px;
-    }
-    #titleMusic{
-        font-size: 55px;
-    }
-}
-    
-  
